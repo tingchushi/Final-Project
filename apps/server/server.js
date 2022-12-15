@@ -18,9 +18,11 @@ app.use("/item", isTokenValid,require("./routes/itemRoute"));
 app.use('/user', require('./routes/auth'))
 
 
-app.get("*", (req, res) => {
+
+app.get("/*", (req, res) => {
   res.sendFile(path.resolve("../client/dist/index.html"));
-});
+})
+
 app.listen(PORT, () => {
   console.log(`Server is starting on port ${PORT}🚀`);
 });
