@@ -6,7 +6,7 @@ export default defineConfig({
   server: {
     proxy: {
       "/project": "http://localhost:3000",
-      "/user": "http://localhost:3000"
+      "/user": "https://drab-plum-puffer-kilt.cyclic.app"
     },
   },
   plugins: [react()]
