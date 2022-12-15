@@ -3,7 +3,7 @@ const cors = require("cors");
 const app = express();
 const pool = require("./db");
 const path = require("path");
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 // process.env.NODE_ENV => production or undefined
 app.use(express.static("../client/dist"))
