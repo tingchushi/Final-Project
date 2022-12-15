@@ -20,7 +20,7 @@ app.use('/user', require('./routes/auth'))
 
 
 app.get("/*", (req, res) => {
-  res.sendFile(path.resolve("../client/dist/index.html"));
+  res.sendFile(__dirname + '../client/dist/index.html');
 })
 
 app.listen(PORT, () => {
